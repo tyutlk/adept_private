@@ -1,6 +1,19 @@
 # adept_private
 This is a  private repositorty for essay disscuion and work progress note 
-
+# guide to use git
+## 本地创建版本库
+创建一个空目录：
+	$ mkdir learngit
+	$ cd learngit
+git init命令把这个目录变成Git可以管理的仓库：
+	$ git init
+在该目录下创建编辑论文笔记（*.md文件）
+	$ vim PointPillars.md
+使用git add把文件添加到仓库(可一次添加多篇）：
+	$ git add  PointPillars.md
+命令git commit告诉Git，把文件提交到仓库：
+	$ git commit -m "wrote a new essay:PointPillars"
+## 推送到远程仓库
 查看远程库信息，使用`git remote -v`；
 
 本地新建的分支如果不推送到远程，对其他人就是不可见的；
